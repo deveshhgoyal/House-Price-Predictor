@@ -1,0 +1,56 @@
+at line 75 -> this will be deleted 
+
+# # Applying logistic regression to find out the missing values of road column
+# missinf_idx = []
+# for i in range(df.shape[0]):
+#     if df['road'][i] is None:
+#         missinf_idx.append(i)
+
+# missing_Road_X_Train = np.array([[df['MedInc'][i],df['AveRooms'][i],df['AveBedrms'][i]] for i in range(df.shape[0]) if i not in missinf_idx])
+
+# missing_Road_Y_Train = np.array([df['road'][i] for i in range(df.shape[0]) if i not in missinf_idx])
+
+# missing_Road_X_Test = np.array([[df['MedInc'][i],df['AveRooms'][i],df['AveBedrms'][i]] for i in missinf_idx])   
+
+# from sklearn.linear_model import SGDClassifier 
+
+# model_1 = SGDClassifier()
+# model_1.fit(missing_Road_X_Train, missing_Road_Y_Train)
+
+# missing_Road_y_pred = model_1.predict(missing_Road_X_Test)
+
+# # print(np.unique(missing_Road_y_pred, return_counts=True))
+
+# for n,i in enumerate(missinf_idx):
+#     df['road'][i] = missing_Road_y_pred[n]
+
+# print(df.info())
+
+# from sklearn.preprocessing import LabelEncoder
+# le_road = LabelEncoder()
+# df['road'] = le_road.fit_transform(df['road'])
+
+
+# # applying logistic regression to find out the missing values of County column
+# missinf_idx = []
+# for i in range(df.shape[0]):
+#     if df['County'][i] is None:
+#         missinf_idx.append(i)
+
+# missing_county_X_Train = np.array([[df['MedInc'][i],df['AveRooms'][i],df['AveBedrms'][i]] for i in range(df.shape[0]) if i not in missinf_idx])
+
+# missing_county_Y_Train = np.array([df['County'][i] for i in range(df.shape[0]) if i not in missinf_idx])
+
+# missing_county_X_Test = np.array([[df['MedInc'][i],df['AveRooms'][i],df['AveBedrms'][i]] for i in missinf_idx])   
+
+# from sklearn.linear_model import SGDClassifier 
+
+# model_1 = SGDClassifier()
+# model_1.fit(missing_county_X_Train, missing_county_Y_Train)
+
+# missing_county_y_pred = model_1.predict(missing_county_X_Test)
+
+# # print(np.unique(missing_county_y_pred, return_counts=True))
+
+# for n,i in enumerate(missinf_idx):
+#     df['County'][i] = missing_county_y_pred[n]
