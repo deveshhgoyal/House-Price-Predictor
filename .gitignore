@@ -1,0 +1,115 @@
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Pytest / testing
+.pytest_cache/
+.cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# ===========================
+# Machine Learning / Data
+# ===========================
+# Pickle model files (large — regenerate via main.py)
+model.pkl
+road_encoder.pkl
+loc_update.pkl
+
+# Keep county_encoder.pkl since it's small and needed by the app
+# county_encoder.pkl  ← NOT ignored
+
+# Large HTML reports
+california_housing_report.html
+
+# Datasets / raw data
+*.csv
+*.xlsx
+*.xls
+data/
+
+# ===========================
+# Flask
+# ===========================
+instance/
+*.db
+flask_session/
+
+# ===========================
+# Environment / Secrets
+# ===========================
+.env
+.env.*
+*.env
+secrets.py
+config.local.py
+
+# ===========================
+# IDE / Editor
+# ===========================
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.suo
+*.user
+*.swp
+*.swo
+*~
+
+# ===========================
+# OS Generated
+# ===========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ===========================
+# Logs
+# ===========================
+*.log
+logs/
+
+# ===========================
+# Misc
+# ===========================
+Rough/
+*.bak
+*.tmp
