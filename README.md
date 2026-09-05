@@ -183,8 +183,8 @@ The **LightGBM** model achieved the best performance with:
 
 ## 👤 Author
 
-**Devesh Garg**  
-GitHub: [@DeveshGarg19](https://github.com/DeveshGarg19)
+**Devesh Goyal**  
+GitHub: [@deveshhgoyal](https://github.com/deveshhgoyal)
 
 ---
 
